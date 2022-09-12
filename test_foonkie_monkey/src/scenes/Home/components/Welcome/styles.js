@@ -8,8 +8,10 @@ export const styles = StyleSheet.create({
     backgroundColor: COLORS.powderBlue,
   },
   welcome: {
+    position: 'relative',
     padding: 16,
     backgroundColor: COLORS.powderBlue,
+    paddingBottom: 296,
   },
   textContent: {
     fontSize: FONT_SIZE.caption1,
@@ -17,6 +19,9 @@ export const styles = StyleSheet.create({
     marginHorizontal: 64,
   },
   monkey: {
+    position: 'absolute',
+    top: '96%',
+    zIndex: 1,
     alignSelf: 'center',
   },
 });

@@ -10,10 +10,10 @@ import Seprator from 'components/Separator';
 
 const Welcome = () => (
   <>
+    <View style={styles.header}>
+      <Image source={logo} />
+    </View>
     <View style={styles.welcome}>
-      <View style={styles.header}>
-        <Image source={logo} />
-      </View>
       <Seprator />
       <Title text={'Expert Samurais\non Develop Secure apps\nwith Sensitive'} />
       <SimpleText
