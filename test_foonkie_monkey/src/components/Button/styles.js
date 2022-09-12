@@ -6,10 +6,6 @@ export const styles = StyleSheet.create({
     width: 120,
     backgroundColor: COLORS.ghostWhite,
     borderRadius: 21,
-    alignSelf: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
-    margin: 16,
   },
   btnText: {
     fontFamily: 'DMSerifDisplay-Regular',

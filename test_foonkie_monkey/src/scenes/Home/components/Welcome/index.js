@@ -20,7 +20,7 @@ const Welcome = () => (
         style={styles.textContent}
         text="We are samurais code monkeys that masters the most recent data security protocols, encrypted methodologies and Blockchain development."
       />
-      <MessageEmailBtn />
+      <MessageEmailBtn style={styles.btn} />
       <Image style={styles.monkey} source={welcomeMonkey} />
     </View>
   </>

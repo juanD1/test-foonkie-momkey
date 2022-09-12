@@ -18,6 +18,12 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginHorizontal: 64,
   },
+  btn: {
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: 16,
+  },
   monkey: {
     position: 'absolute',
     top: '96%',

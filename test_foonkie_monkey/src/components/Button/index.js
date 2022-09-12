@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import {Text, TouchableOpacity} from 'react-native';
 import {styles} from './styles';
 
-const Button = ({style, text, handleOnPress}) => (
+const NO_OP = () => {};
+
+const Button = ({style, text, handleOnPress = NO_OP}) => (
   <TouchableOpacity
     style={{...styles.btn, ...style}}
     onPress={() => handleOnPress()}>

@@ -23,4 +23,5 @@ export const COLORS = {
   ceruleanCrayola: '#29ABE1',
   blueBell: '#AAAACC',
   ghostWhite: '#F5F5FA',
+  lavanderWeb: '#E6E3EF',
 };
