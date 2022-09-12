@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
   title: {
     marginHorizontal: 0,
     marginVertical: 16,
+    textAlign: 'left',
   },
   description: {
     fontSize: FONT_SIZE.footnote,

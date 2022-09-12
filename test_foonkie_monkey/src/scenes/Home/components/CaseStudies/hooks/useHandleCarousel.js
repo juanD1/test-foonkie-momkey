@@ -1,7 +1,6 @@
 import {useState} from 'react';
 
 const useHandleCarousel = carouselRef => {
-  console.log('ref useHandleCarousel: ', carouselRef);
   const [activedItemId, setActivedItemId] = useState(0);
 
   const handleOnSnapToItem = index => setActivedItemId(index);
@@ -18,7 +17,19 @@ const useHandleCarousel = carouselRef => {
     }
   };
 
-  return {handleOnSnapToItem, handleSnapToNext, handleSnapToPrev};
+  const handleSnapToItem = item => {
+    if (carouselRef && carouselRef.current) {
+      carouselRef.current.snapToItem(item);
+    }
+  };
+
+  return {
+    activedItemId,
+    handleOnSnapToItem,
+    handleSnapToNext,
+    handleSnapToPrev,
+    handleSnapToItem,
+  };
 };
 
 export default useHandleCarousel;

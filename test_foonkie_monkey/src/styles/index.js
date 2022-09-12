@@ -24,4 +24,5 @@ export const COLORS = {
   blueBell: '#AAAACC',
   ghostWhite: '#F5F5FA',
   lavanderWeb: '#E6E3EF',
+  rhythm: '#817E9F',
 };
