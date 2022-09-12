@@ -17,8 +17,12 @@ export const FONT_SIZE = {
 // NOTE: color names based on generated name on https://coolors.co
 
 export const COLORS = {
-  black: '#000000',
+  black: '#000',
+  white: '#fff',
   powderBlue: '#B3DDD8',
   ceruleanCrayola: '#29ABE1',
+  blueBell: '#AAAACC',
   ghostWhite: '#F5F5FA',
+  lavanderWeb: '#E6E3EF',
+  rhythm: '#817E9F',
 };
