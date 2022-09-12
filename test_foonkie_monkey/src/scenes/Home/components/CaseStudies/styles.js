@@ -4,7 +4,7 @@ import {COLORS} from 'styles';
 export const styles = StyleSheet.create({
   container: {
     paddingTop: 88,
-    padding: 16,
+    paddingBottom: 64,
     backgroundColor: COLORS.blueBell,
     zIndex: -1,
   },

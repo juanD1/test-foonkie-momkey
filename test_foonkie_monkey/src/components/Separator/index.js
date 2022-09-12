@@ -3,11 +3,14 @@ import PropTypes from 'prop-types';
 import {View} from 'react-native';
 import {styles} from './styles';
 
-const Seprator = ({color, align = 'center'}) => (
-  <View style={{...styles.seprator, borderColor: color, alignSelf: align}} />
+const Seprator = ({style, color, align = 'center'}) => (
+  <View
+    style={{...styles.seprator, borderColor: color, alignSelf: align, ...style}}
+  />
 );
 
 Seprator.propTypes = {
+  style: PropTypes.string,
   color: PropTypes.string,
   align: PropTypes.string,
 };

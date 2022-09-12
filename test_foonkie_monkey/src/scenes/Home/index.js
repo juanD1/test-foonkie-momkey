@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, ScrollView} from 'react-native';
 import CaseStudies from './components/CaseStudies';
+import ContactUs from './components/ContactUs';
 import Welcome from './components/Welcome';
 
 const Home = () => (
@@ -8,6 +9,7 @@ const Home = () => (
     <ScrollView>
       <Welcome />
       <CaseStudies />
+      <ContactUs />
     </ScrollView>
   </View>
 );

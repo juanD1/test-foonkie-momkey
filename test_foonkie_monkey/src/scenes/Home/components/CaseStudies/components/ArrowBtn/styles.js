@@ -16,10 +16,10 @@ const btn = {
 export const styles = StyleSheet.create({
   btnLeft: {
     ...btn,
-    left: 0,
+    left: '4%',
   },
   btnRight: {
     ...btn,
-    right: 0,
+    right: '4%',
   },
 });
