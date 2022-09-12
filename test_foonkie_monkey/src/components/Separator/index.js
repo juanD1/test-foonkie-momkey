@@ -10,7 +10,7 @@ const Seprator = ({style, color, align = 'center'}) => (
 );
 
 Seprator.propTypes = {
-  style: PropTypes.string,
+  style: PropTypes.object,
   color: PropTypes.string,
   align: PropTypes.string,
 };

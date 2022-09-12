@@ -19,7 +19,6 @@ export const styles = StyleSheet.create({
   },
   actived: {
     ...baseItem,
-    borderTopWidth: 1,
     color: COLORS.black,
   },
   text: {
@@ -28,5 +27,10 @@ export const styles = StyleSheet.create({
   disabledText: {
     ...baseText,
     color: COLORS.rhythm,
+  },
+  line: {
+    width: 32,
+    height: 1,
+    backgroundColor: COLORS.black,
   },
 });
