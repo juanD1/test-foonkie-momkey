@@ -5,16 +5,12 @@ const useGetUsers = () => {
   const [users, setUsers] = useState([]);
   const [offset, setOffset] = useState(1);
 
-  useEffect(() => getUsers(), []);
-
-  const getUsers = () => {
+  const handleGetUser = () => {
     setLoading(true);
-    //Service to get the data from the server to render
     fetch('https://reqres.in/api/users?page=' + offset)
-      //Sending the currect offset with get request
       .then(response => response.json())
       .then(({data, total_pages}) => {
-        if (total_pages <= offset) {
+        if (offset <= total_pages) {
           setOffset(offset + 1);
           setUsers([...users, ...data]);
         }
@@ -25,7 +21,12 @@ const useGetUsers = () => {
     setLoading(false);
   };
 
-  return {loading, users};
+  useEffect(() => {
+    handleGetUser();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return {loading, users, handleGetUser};
 };
 
 export default useGetUsers;

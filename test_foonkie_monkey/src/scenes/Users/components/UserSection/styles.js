@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {COLORS, FONT_SIZE} from 'styles';
+import {FONT_SIZE} from 'styles';
 
 export const styles = StyleSheet.create({
   section: {

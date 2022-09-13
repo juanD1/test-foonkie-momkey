@@ -2,15 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {View} from 'react-native';
 import Button from 'components/Button';
-// import {styles} from './styles';
+import {styles} from './styles';
 
 const NO_OP = () => {};
 
 const FooterSection = ({handleLoadUsers = NO_OP, handleSaveToDb = NO_OP}) => {
   return (
-    <View>
-      <Button text="Load more" handleOnPress={handleLoadUsers} />;
-      <Button text="Save on db" handleOnPress={handleSaveToDb} />;
+    <View style={styles.container}>
+      <Button
+        style={styles.btn}
+        text="Load more"
+        handleOnPress={handleLoadUsers}
+      />
+      <Button
+        style={styles.btn}
+        text="Save on db"
+        handleOnPress={handleSaveToDb}
+      />
     </View>
   );
 };
