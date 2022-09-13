@@ -16,7 +16,7 @@ const UsersList = () => {
         <FlatList
           showsVerticalScrollIndicator={false}
           data={users}
-          renderItem={UserSection}
+          renderItem={({item}) => <UserSection item={item} />}
           keyExtractor={({id}) => id}
           ListFooterComponent={() => (
             <FooterSection
