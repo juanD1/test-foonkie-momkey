@@ -13,7 +13,6 @@ export const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: COLORS.ceruleanCrayola,
     alignItems: 'flex-end',
-    height: 500,
   },
   title: {
     marginHorizontal: 0,

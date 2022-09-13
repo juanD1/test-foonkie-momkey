@@ -1,18 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {TouchableOpacity, View} from 'react-native';
+import {Platform, TouchableOpacity, View} from 'react-native';
 import Title from 'components/Title';
+import SimpleText from 'components/SimpleText';
 import {styles} from './styles';
 
-const IndustryItem = ({id, industry, actived = true, handleOnPress}) => (
+const IndustryItem = ({id, industry, actived, handleOnPress}) => (
   <TouchableOpacity
     style={!actived ? styles.item : styles.actived}
     onPress={() => handleOnPress(id)}>
     {actived && <View style={styles.line} />}
-    <Title
-      style={!actived ? styles.disabledText : styles.text}
-      text={industry}
-    />
+    {Platform.OS !== 'ios' ? (
+      <SimpleText text={industry} />
+    ) : (
+      <Title
+        style={!actived ? styles.disabledText : styles.text}
+        text={industry}
+      />
+    )}
   </TouchableOpacity>
 );
 

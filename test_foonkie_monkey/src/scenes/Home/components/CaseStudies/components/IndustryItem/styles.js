@@ -10,7 +10,7 @@ const baseItem = {
 const baseText = {
   margin: 0,
   lineHeight: 0,
-  fontSize: FONT_SIZE.footnote,
+  // fontSize: FONT_SIZE.footnote,
 };
 
 export const styles = StyleSheet.create({
@@ -23,6 +23,7 @@ export const styles = StyleSheet.create({
   },
   text: {
     ...baseText,
+    color: COLORS.black,
   },
   disabledText: {
     ...baseText,
