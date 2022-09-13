@@ -328,33 +328,8 @@ PODS:
     - React-perflogger (= 0.64.3)
   - RNGestureHandler (2.6.0):
     - React-Core
-  - RNReanimated (2.10.0):
-    - DoubleConversion
-    - FBLazyVector
-    - FBReactNativeSpec
-    - glog
-    - RCT-Folly
-    - RCTRequired
-    - RCTTypeSafety
-    - React-callinvoker
+  - RNReanimated (1.13.4):
     - React-Core
-    - React-Core/DevSupport
-    - React-Core/RCTWebSocket
-    - React-CoreModules
-    - React-cxxreact
-    - React-jsi
-    - React-jsiexecutor
-    - React-jsinspector
-    - React-RCTActionSheet
-    - React-RCTAnimation
-    - React-RCTBlob
-    - React-RCTImage
-    - React-RCTLinking
-    - React-RCTNetwork
-    - React-RCTSettings
-    - React-RCTText
-    - ReactCommon/turbomodule/core
-    - Yoga
   - RNScreens (3.17.0):
     - React-Core
     - React-RCTImage
@@ -552,7 +527,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 493d9abb8b23c3f84e19ae221eeba92cadcb70dc
   ReactCommon: 8fea6422328e2fc093e25c9fac67adbcf0f04fb4
   RNGestureHandler: 920eb17f5b1e15dae6e5ed1904045f8f90e0b11e
-  RNReanimated: cce4727fde9f4da9b800d999fa9975ea7a021dcf
+  RNReanimated: c1b56d030d1616239861534d9adb531f8cffab68
   RNScreens: 0df01424e9e0ed7827200d6ed1087ddd06c493f9
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   Yoga: e6ecf3fa25af9d4c87e94ad7d5d292eedef49749
