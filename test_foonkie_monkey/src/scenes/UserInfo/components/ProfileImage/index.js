@@ -34,7 +34,7 @@ const ProfileImage = ({userImg}) => {
 
   return (
     <>
-      <Image style={styles.avatar} source={{url: !img ? userImg : img}} />
+      <Image style={styles.avatar} source={{uri: !img ? userImg : img}} />
       <View style={styles.container}>
         <TouchableOpacity style={styles.btn} onPress={() => handleGalery()}>
           <Icon name="image" size={24} color={COLORS.ceruleanCrayola} />
