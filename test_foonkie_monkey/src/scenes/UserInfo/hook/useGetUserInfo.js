@@ -23,6 +23,7 @@ const useGetUserInfo = userId => {
       }
     } catch (e) {
       console.log('Error: handleGetUser: ', e);
+      Alert.alert(`Error getting user: ${e}`, '');
     }
     setLoading(false);
   };

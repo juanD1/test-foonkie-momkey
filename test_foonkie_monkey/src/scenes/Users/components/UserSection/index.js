@@ -14,7 +14,7 @@ const UserSection = ({item}) => {
 
   return (
     <TouchableOpacity style={styles.section} onPress={() => handleUserInfo()}>
-      <Image style={styles.avatar} source={{url: item.avatar}} />
+      <Image style={styles.avatar} source={{uri: item.avatar}} />
       <View style={styles.textSection}>
         <SimpleText
           style={styles.fullName}
