@@ -7,9 +7,12 @@
  */
 
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 import {SafeAreaView, useColorScheme} from 'react-native';
-import Home from 'scenes/Home';
+import 'react-native-gesture-handler';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import DrawerNavigator from './navigations';
+import Menu from 'components/Menu';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,9 +21,11 @@ const App = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <Home />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={backgroundStyle} />
+      <DrawerNavigator />
+      <Menu />
+    </NavigationContainer>
   );
 };
 
