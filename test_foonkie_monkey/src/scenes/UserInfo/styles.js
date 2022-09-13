@@ -15,7 +15,6 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
   },
   fullName: {
-    marginTop: 16,
     fontSize: FONT_SIZE.title1,
   },
 });
