@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import {DUMMY_USER} from '../consts';
 import {getDBConnection} from 'db/connection';
 import {getUser} from 'db/repositories';
+import {Alert} from 'react-native';
 
 const useGetUserInfo = userId => {
   const [loading, setLoading] = useState(false);
@@ -16,6 +17,8 @@ const useGetUserInfo = userId => {
         console.log('storedUser: ', storedUser);
         if (storedUser) {
           setUser(storedUser);
+        } else {
+          Alert.alert(`User with id: ${userId} does not exist`, '');
         }
       }
     } catch (e) {
