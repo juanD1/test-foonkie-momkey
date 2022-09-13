@@ -1,14 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {useNavigation} from '@react-navigation/native';
 import {View, Image, TouchableOpacity} from 'react-native';
 import SimpleText from 'components/SimpleText';
 import {styles} from './styles';
 
-const NO_OP = () => {};
+const UserSection = ({item}) => {
+  const navigation = useNavigation();
 
-const UserSection = ({item, handleOnPress = NO_OP}) => {
+  const handleUserInfo = () => {
+    navigation.navigate('UserInfo', {id: item.id});
+  };
+
   return (
-    <TouchableOpacity style={styles.section} onPress={handleOnPress}>
+    <TouchableOpacity style={styles.section} onPress={() => handleUserInfo()}>
       <Image style={styles.avatar} source={{url: item.avatar}} />
       <View style={styles.textSection}>
         <SimpleText
@@ -29,7 +34,6 @@ UserSection.propTypes = {
     email: PropTypes.string,
     avatar: PropTypes.string,
   }),
-  handleOnPress: PropTypes.func,
 };
 
 export default UserSection;

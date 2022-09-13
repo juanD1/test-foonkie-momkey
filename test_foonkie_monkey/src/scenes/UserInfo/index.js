@@ -7,7 +7,7 @@ import {styles} from './styles';
 import useGetUserInfo from './hook/useGetUserInfo';
 
 const UserInfo = ({route}) => {
-  const {loading, user} = useGetUserInfo();
+  const {loading, user} = useGetUserInfo(route?.params?.id);
 
   return (
     <View style={styles.container}>
