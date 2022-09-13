@@ -6,7 +6,7 @@ import Welcome from './components/Welcome';
 
 const Home = () => (
   <View>
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <Welcome />
       <CaseStudies />
       <ContactUs />
