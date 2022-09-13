@@ -5,6 +5,12 @@ export const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
   },
+  avatar: {
+    width: 144,
+    height: 144,
+    marginTop: 64,
+    borderRadius: 50,
+  },
   btn: {
     width: 44,
     height: 44,

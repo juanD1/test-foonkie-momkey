@@ -8,12 +8,6 @@ export const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: COLORS.lavanderWeb,
   },
-  avatar: {
-    width: 144,
-    height: 144,
-    marginTop: 64,
-    borderRadius: 50,
-  },
   fullName: {
     fontSize: FONT_SIZE.title1,
   },
