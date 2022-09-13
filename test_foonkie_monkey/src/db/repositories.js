@@ -30,6 +30,20 @@ export const getUserItems = async db => {
   }
 };
 
+export const getUser = async (db, id) => {
+  try {
+    const result = await db.executeSql(
+      `SELECT * FROM ${tableName} where user_id = ${id}`,
+    );
+    if (result.length) {
+      return result[0].rows.item(0);
+    }
+  } catch (error) {
+    console.error(error);
+    throw Error('Failed to get userItems!');
+  }
+};
+
 export const saveUserItems = async (db, userItems) => {
   try {
     const insertQuery =
