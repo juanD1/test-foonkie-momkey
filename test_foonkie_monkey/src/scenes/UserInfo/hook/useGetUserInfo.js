@@ -14,7 +14,6 @@ const useGetUserInfo = userId => {
       if (userId) {
         const db = await getDBConnection();
         const storedUser = await getUser(db, userId);
-        console.log('storedUser: ', storedUser);
         if (storedUser) {
           setUser(storedUser);
         } else {
@@ -22,7 +21,6 @@ const useGetUserInfo = userId => {
         }
       }
     } catch (e) {
-      console.log('Error: handleGetUser: ', e);
       Alert.alert(`Error getting user: ${e}`, '');
     }
     setLoading(false);
